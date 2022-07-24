@@ -10,5 +10,5 @@ class Grid(ABC):
         """Places a new rover on the field at the indicated position"""
 
 
-def create_empty_grid(grid_size: int) -> Grid:
+def create_empty_grid(dimensions: Tuple[int, int]) -> Grid:
     """Creates an empty grid, on which rovers can be placed."""
