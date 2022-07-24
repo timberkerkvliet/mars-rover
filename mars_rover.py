@@ -10,7 +10,7 @@ class Heading(Enum):
     WEST = 'W'
 
 
-class DeployedMarsRover(ABC):
+class MarsRover(ABC):
     @abstractmethod
     def rotate_left(self) -> None:
         """Rotates 90 degrees left"""
@@ -25,8 +25,8 @@ class DeployedMarsRover(ABC):
 
     @abstractmethod
     def get_position(self) -> Tuple[int, int]:
-        """Returns the current position of the rover"""
+        """Returns the current position"""
 
     @abstractmethod
     def get_heading(self) -> Heading:
-        """Returns the current heading of the rover"""
+        """Returns the current heading"""
