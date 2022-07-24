@@ -12,7 +12,7 @@ might be (0, 0), which means the rover is in the bottom left corner. An example
 heading might be North.
 
 In order to control a rover, NASA sends an instruction. The possible instructions
-are: "rotate left", "rotate right" and "mov"e. When rotated, the rover spins 90
+are: "rotate left", "rotate right" and "move". When rotated, the rover spins 90
 degrees left or right respectively, without moving from its current spot. When moved,
 the rover moves forward one grid point, maintaining the same heading.
 

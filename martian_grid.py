@@ -13,4 +13,4 @@ class MartianGrid(ABC):
 class MartianGridFactory(ABC):
     @abstractmethod
     def create_empty_grid(self, grid_size: int) -> MartianGrid:
-        """Creates an empty martian grid, which can place new rovers on this field."""
+        """Creates an empty martian grid, on which mars rovers can be placed."""
