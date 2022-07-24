@@ -10,7 +10,7 @@ class Heading(Enum):
     WEST = 'W'
 
 
-class MarsRover(ABC):
+class DeployedMarsRover(ABC):
     @abstractmethod
     def rotate_left(self) -> None:
         """Rotates 90 degrees left"""

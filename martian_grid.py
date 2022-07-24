@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 from typing import Tuple
 
-from mars_rover import MarsRover
+from mars_rover import DeployedMarsRover
 
 
 class MartianGrid(ABC):
     @abstractmethod
-    def place_new_rover(self, position: Tuple[int, int]) -> MarsRover:
+    def deploy_new_rover(self, position: Tuple[int, int]) -> DeployedMarsRover:
         """Places a new rover on the field at the indicated position"""
 
 
