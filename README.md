@@ -22,5 +22,5 @@ Rovers cannot move outside the grid.
 
 At each grid point, there can be at most one rover.
 
-A rover that receives an instruction that can not be executed, sends back an indication
-that it can not execute the required instruction and does not do anything.
+A rover that receives an instruction that can not be executed, raises an exception
+indicating that it can not execute the required instruction and does not do anything.
