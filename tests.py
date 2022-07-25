@@ -4,10 +4,12 @@ from grid import create_empty_grid
 
 
 class ExampleTest(TestCase):
-    def test_rover_gives_back_start_position(self):
+    def test_place_new_rover(self):
+        # arrange
         grid = create_empty_grid(dimensions=(1, 1))
-        rover = grid.place_new_rover()
 
-        response = rover.get_position()
+        # act
+        grid.place_new_rover()
 
-        self.assertEqual((0, 0), response)
+        # assert
+        self.assertEqual(1, len(grid.get_rovers()))

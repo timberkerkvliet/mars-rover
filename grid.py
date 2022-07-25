@@ -1,13 +1,17 @@
 from abc import ABC, abstractmethod
-from typing import Tuple
+from typing import Tuple, List
 
 from mars_rover import MarsRover
 
 
 class Grid(ABC):
     @abstractmethod
-    def place_new_rover(self) -> MarsRover:
+    def place_new_rover(self) -> None:
         """Places a new rover on the field"""
+
+    @abstractmethod
+    def get_rovers(self) -> List[MarsRover]:
+        """Get all the rovers on the field"""
 
 
 def create_empty_grid(dimensions: Tuple[int, int]) -> Grid:
