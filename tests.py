@@ -8,4 +8,6 @@ class ExampleTest(TestCase):
         grid = create_empty_grid(dimensions=(1, 1))
         rover = grid.place_new_rover()
 
-        self.assertEqual((0, 0), rover.get_position())
+        response = rover.get_position()
+
+        self.assertEqual((0, 0), response)
