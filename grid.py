@@ -11,7 +11,7 @@ class Grid(ABC):
 
     @abstractmethod
     def get_rovers(self) -> List[MarsRover]:
-        """Get all the rovers on the field"""
+        """Get all the rovers on the field in order of placement"""
 
 
 def create_empty_grid(dimensions: Tuple[int, int]) -> Grid:
