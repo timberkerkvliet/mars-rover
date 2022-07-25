@@ -6,7 +6,7 @@ from mars_rover import MarsRover, Heading
 
 class Grid(ABC):
     @abstractmethod
-    def place_new_rover(self, position: Tuple[int, int], heading: Heading) -> MarsRover:
+    def place_new_rover(self) -> MarsRover:
         """Places a new rover on the field at the indicated position"""
 
 
