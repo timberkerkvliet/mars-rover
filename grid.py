@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Tuple
 
-from mars_rover import MarsRover, Heading
+from mars_rover import MarsRover
 
 
 class Grid(ABC):
