@@ -22,7 +22,7 @@ Rovers cannot move outside the grid.
 
 At each grid point, there can be at most one rover.
 
-New rovers are always placed in the bottom left corner (0, 0), heading north.
+New rovers are always placed at position (0, 0), heading north.
 
 A rover that receives an instruction that can not be executed, raises an exception
 indicating that it can not execute the required instruction and does not do anything.
