@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from team2.implementation import create_empty_grid
+from team2.create_empty_grid import create_empty_grid
 
 
 class ExampleTest(TestCase):

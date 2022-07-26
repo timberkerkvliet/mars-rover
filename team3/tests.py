@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from team3.mars_grid import create_empty_grid
+from team3.create_empty_grid import create_empty_grid
 from mars_rover import Heading
 
 

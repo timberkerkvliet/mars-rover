@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from mars_rover import Heading
-from team1.grid_implementation import create_empty_grid
+from team1.create_empty_grid import create_empty_grid
 
 
 class ExampleTest(TestCase):

@@ -81,6 +81,3 @@ class GridImplementation(Grid):
         )
 
 
-def create_empty_grid(dimensions: Tuple[int, int]) -> Grid:
-    """Creates an empty grid, on which rovers can be placed."""
-    return GridImplementation(dimensions=dimensions)

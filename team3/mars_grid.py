@@ -18,7 +18,3 @@ class MarsGrid(Grid):
     def get_rovers(self) -> List[JeroenRover]:
         """Get all the rovers on the field in order of placement"""
         return self.rovers
-
-
-def create_empty_grid(dimensions):
-    return MarsGrid()

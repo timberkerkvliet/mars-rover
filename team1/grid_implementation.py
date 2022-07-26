@@ -15,8 +15,3 @@ class GridImplementation(Grid):
 
     def get_rovers(self) -> List[MarsRover]:
         return self.rovers
-
-
-def create_empty_grid(dimensions: Tuple[int, int]) -> Grid:
-    """Creates an empty grid, on which rovers can be placed."""
-    return GridImplementation(dimensions=dimensions)
