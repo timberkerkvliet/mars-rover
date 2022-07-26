@@ -1,17 +1,8 @@
-from abc import ABC, abstractmethod
 from typing import Tuple, List
 
-from .mars_rover import MarsRover, MarsRoverImplementation
-
-
-class Grid(ABC):
-    @abstractmethod
-    def place_new_rover(self) -> None:
-        """Places a new rover on the field"""
-
-    @abstractmethod
-    def get_rovers(self) -> List[MarsRover]:
-        """Get all the rovers on the field in order of placement"""
+from grid import Grid
+from mars_rover import MarsRover
+from team1.mars_rover_implementation import MarsRoverImplementation
 
 
 class GridImplementation(Grid):

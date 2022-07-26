@@ -1,19 +1,9 @@
 from __future__ import annotations
-from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
-from typing import Tuple, List, Set
+from typing import Tuple, List
 
+from grid import Grid
 from mars_rover import MarsRover, Heading
-
-
-class Grid(ABC):
-    @abstractmethod
-    def place_new_rover(self) -> None:
-        """Places a new rover on the field"""
-
-    @abstractmethod
-    def get_rovers(self) -> List[MarsRover]:
-        """Get all the rovers on the field in order of placement"""
 
 
 class MarsRoverImplementation(MarsRover):
@@ -83,7 +73,6 @@ class GridImplementation(Grid):
 
     def _check_if_position_is_in_bounds(self, position: Tuple[int, int]) -> bool:
         return 0 <= position[0] < self.dimensions[0] and 0 <= position[1] < self.dimensions[1]
-
 
     def _check_if_position_does_not_collide_with_rovers(self, position: Tuple[int, int]) -> bool:
         return all(
