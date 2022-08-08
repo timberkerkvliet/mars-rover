@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Tuple, List
+from typing import Tuple, List, Dict
 
 from mars_rover import MarsRover
 
@@ -14,6 +14,9 @@ class Grid(ABC):
         """Get all the rovers on the field in order of placement"""
 
 
-def create_empty_grid(dimensions: Tuple[int, int]) -> Grid:
+def create_empty_grid(
+    dimensions: Tuple[int, int],
+    soil: Dict[Tuple[int, int], str]
+) -> Grid:
     """Creates an empty grid, on which rovers can be placed."""
     raise NotImplementedError

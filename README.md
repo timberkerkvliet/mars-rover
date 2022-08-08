@@ -26,3 +26,9 @@ New rovers are always placed at position (0, 0), heading north.
 
 A rover that receives an instruction that can not be executed, raises an exception
 indicating that it can not execute the required instruction and does not do anything.
+
+## Additional requirements: telemetry
+
+Assume that each point in the plateau grid gets assigned a letter A-Z, which the NASA uses
+for the type of soil at that point. A rover gets an additional instruction: "get_soil_data", which
+sends back the type of soil at the point directly left and right of the current position of the rover.
